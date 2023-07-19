@@ -4,8 +4,9 @@ public class Customer
 {
     public Customer()
     {
-        Orders = new List<Order>();  //Object null referance hatası almamak için 
+        Orders = new List<Order>();  //Object null referance hatası almamak için
     }
+
     public string CustomerID { get; set; }
     public string ContactName { get; set; }
     public string CompanyName { get; set; }

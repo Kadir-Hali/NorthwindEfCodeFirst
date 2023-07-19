@@ -1,5 +1,5 @@
-﻿using System.Data.Entity;
-using NorthwindEfCodeFirst.Entities;
+﻿using NorthwindEfCodeFirst.Entities;
+using System.Data.Entity;
 
 namespace NorthwindEfCodeFirst.Contexts;
 

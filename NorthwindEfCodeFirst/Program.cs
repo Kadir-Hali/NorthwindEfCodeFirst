@@ -34,7 +34,7 @@ void addOrderWithCustomer()
     {
         Customer customer = northwindContext.Customers.Find("Kadir");
         customer.Orders.Add(new Order
-            { OrderID = 1, OrderDate = DateTime.Now, ShipCity = "İzmir", ShipCountry = "Türkiye" });
+        { OrderID = 1, OrderDate = DateTime.Now, ShipCity = "İzmir", ShipCountry = "Türkiye" });
         northwindContext.SaveChanges();
     }
 }
@@ -45,7 +45,10 @@ void addCustomer()
     {
         Customer customer = new Customer
         {
-            CustomerID = "Kadir", ContactName = "Kadir Halı", City = "Antalya", CompanyName = "İksir",
+            CustomerID = "Kadir",
+            ContactName = "Kadir Halı",
+            City = "Antalya",
+            CompanyName = "İksir",
             Country = "Türkiye"
         };
         northwindContext.Customers.Add(customer);
